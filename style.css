@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #211713;
+    color: #F4EBDD;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    background-color: #2B201B;
+    color: #F4EBDD;
+}
+
+header {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #211713;
+    color: #F4EBDD;
+}
+
+header p {
+    color: #F4EBDD;
+    margin: 5px 0 18px;
+}
+
+.teste {
+    color: #B87945;
+    margin: 0;
+    letter-spacing: 5px;
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    transition: color 0.3s ease;
+    border-radius: 4px;
+    color: #F4EBDD;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+nav a:hover {
+    background-color: #B87945;
+    color: #211713;
+}
+
+.teste1 {
+    background-color: #B87945;
+    color: #211713;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #B87945;
+    margin-bottom: 8px;
+}
+
+section > h2 {
+    margin-bottom: 8px;
+    color: #B87945;
+    font-size: 30px;
+}
+
+section > p {
+    margin-bottom: 25px;
+}
+
+.banner {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 50px;
+
+    background-image: linear-gradient(90deg, rgba(33, 23, 19, 0.85), rgba(33, 23, 19, 0.15)), url("ba42000d-ba06-42e2-b5d3-d6700339ddb9.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-conteudo {
+    max-width: 580px;
+}
+
+.subtitulo {
+    color: #B87945;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.banner h1 {
+    color: #F4EBDD;
+    margin: 15px 0;
+    line-height: 1.15;
+    font-size: clamp(34px, 5vw, 54px);
+}
+
+.descriçao {
+    font-size: 16px;
+    color: #F4EBDD;
+    margin-bottom: 28px;
+}
+
+.botao-banner {
+    background-color: #B87945;
+    color: #211713;
+    padding: 13px 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-banner:hover {
+    background-color: #211713;
+    color: #B87945;
+    transform: translateY(-2px);
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    min-width: 0;
+    overflow: hidden;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    border: 1px solid #6F4932;
+    transition: transform 0.3s;
+    background-color: #30221B;
+    color: #F4EBDD;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin: 15px 0 8px;
+    color: #D9A066;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.selo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+
+    background-color: #B87945;
+    color: #211713;
+
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.preco {
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: bold;
+    color: #D9A066;
+}
+
+#sobre,
+#contato {
+    line-height: 1.8;
+}
+
+#contato ul {
+    padding-left: 22px;
+}
+
+#contato li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 950px) {
+    .container-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .banner {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 18px 14px;
+    }
+
+    .teste {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .banner {
+        padding: 24px;
+        min-height: 380px;
+        background-position: center;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    section > h2 {
+        font-size: 26px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+}
+
+.banner .descriçao {
+    color: #F5F1E8;
+}

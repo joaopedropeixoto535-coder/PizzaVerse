@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="e5391d68-e6b1-4d27-a3d3-d9b6080a497a.png">   
+    <title>PizzaVerse</title>
+</head>
+<body>
+    <header>
+        <h1 class="teste">PizzaVerse</h1>
+        <p align="center">Bem-vindo a PizzaVerse</p>
+        <div align="center">
+            <nav>
+                <a href="#Início">Início</a>|
+                <a href="#Sobre">Sobre</a>|
+                <a href="#Cardápio">Cardápio</a>|
+                <a href="#Promoções">Promoções</a>|
+                <a href="#Contato"></a>
+            </nav>
+        </div>
+    </header>
+    <p class="teste1">CONHEÇA NOSSAS PIZZAS</p>
+
+    <main>
+        
+        <section class="banner" id="Início">
+            <div class="banner-conteudo">
+
+                <p class="subtitulo">PIZZAS ESPECIAIS • EXPERIÊNCIA ÚNICA </p>
+
+                <h1>O sabor que transforma seus momentos</h1>
+
+                <p>Descubra seu novo sabor favorito e embarque nessa viagem deliciosa.</p>
+
+                <a href="#Cardápio" class="botao-banner">Confira o nosso cardápio</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="Início">Início</h2>
+            <p>Bem-vindo à PizzaVerse! 🍕
+
+Descubra um mundo de sabores com nossas pizzas preparadas com ingredientes frescos, massas deliciosas e muito queijo. Temos opções para todos os gostos, desde as clássicas até as favoritas da galera.
+
+Peça sua pizza favorita e transforme qualquer momento em uma experiência deliciosa!</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="Sobre">Sobre</h2>
+            <p>Sobre a PizzaVerse 🍕
+A PizzaVerse nasceu com a missão de levar sabor e qualidade à sua mesa. Trabalhamos com ingredientes selecionados, massas saborosas e muito carinho em cada pizza preparada.
+
+Nosso objetivo é oferecer uma experiência deliciosa para você, sua família e seus amigos, sempre com variedade de sabores e qualidade em cada fatia.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="Cardápio">Cardápio</h2>
+            <p>Da clássica à especial, encontre a pizza perfeita para você.</p>
+
+            <div class="container-cards">
+
+                <div class="card" onclick="AbrirPizza('calabresa')">
+                    <img src="images.jpg" alt="Pizza de calabresa">
+                    <h3>Pizza de calabresa</h3>
+                    <p>Molho de tomate, mussarela, calabresa e cebola.</p>
+                    <p class="preco">R$ 39,90</p>
+                </div>
+                <div class="card" onclick="AbrirPizza('mussarela')">
+                    <img src="images (1).jpg" alt="Pizza de mussarela">
+                    <h3>Pizza de mussarela</h3>
+                    <p>Molho de tomate, mussarela e orégano.</p>
+                    <p class="preco">R$ 34,90</p>
+                </div>
+                <div class="card" onclick="AbrirPizza('frango com catupiry')">
+                    <img src="images (2).jpg" alt="Pizza de frango com catupiry">
+                    <h3>Pizza de frango com catupiry</h3>
+                    <p>Frango desfiado, catupiry e mussarela.</p>
+                    <p class="preco">R$ 42,90</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="Promoções">Promoções</h2>
+            <p>Aproveite nossas ofertas especiais e deixe seu dia ainda mais saboroso! 🍕 Temos combos irresistíveis, descontos exclusivos e promoções para compartilhar com quem você ama.</p>
+
+            <div class="container-cards">
+
+                <div class="card">
+                    <span class="selo">PROMOÇÃO</span>
+                    <img src="images.jpg" alt="Pizza de calabresa">
+                    <h3>Pizza de calabresa</h3>
+                    <p>Calabresa, mussarela, molho de tomate e cebola.</p>
+                    <p class="preco">R$ 39,90</p>
+                </div>
+                <div class="card">
+                    <span class="selo">PROMOÇÃO</span>
+                    <img src="images (1).jpg" alt="Pizza de mussarela">
+                    <h3>Pizza de mussarela</h3>
+                    <p>mussarela, queijo, molho de tomate e massa</p>
+                    <p class="preco">R$ 34,90</p>
+                </div>
+                <div class="card">
+                    <span class="selo">PROMOÇÃO</span>
+                    <img src="images (2).jpg" alt="Pizza de frango com catupiry">
+                    <h3>Pizza de frango com catupiry</h3>
+                    <p>Frango desfiado, catupiry e mussarela.</p>
+                    <p class="preco">R$ 42,90</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="Contato">Contato</h2>
+            <p>Entre em contato com a PizzaVerse!
+Tem alguma dúvida, sugestão ou deseja fazer um pedido especial? Estamos aqui para ajudar! Entre em contato conosco e nossa equipe terá prazer em atender você.
+
+🍕 Sua opinião é muito importante para nós! Estamos sempre buscando maneiras de melhorar sua experiência e levar o melhor sabor até você.</p>
+<ul>
+    <li>Email: pizzaverse@gmail.com</li>
+    <li>Telefone: (11) 94002-8922</li>
+</ul>
+        </section>
+    </main>
+</body>
+</html>
+
+<script src="script.js"></script>
+
+<script>
+    function AbrirPizza(id) {
+        window.location.href = "produto.html?pizza=" + id;
+    }
+</script>
